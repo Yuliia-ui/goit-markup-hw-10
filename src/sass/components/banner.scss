@@ -1,0 +1,46 @@
+.top {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/girls.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  padding-top: 194px;
+  min-height: 602px;
+}
+.banner__title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 48px;
+  letter-spacing: -1px;
+  color: $color-third-white;
+  font-family: $font-stack-title;
+  font-weight: 300;
+  text-align: center;
+}
+.banner__text {
+  color: $color-accent;
+}
+.banner__link {
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 120px;
+  height: 42px;
+  background-color: $color-accent;
+  border: 2px solid $color-accent;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: $color-primary-white;
+  font-family: $font-stack-title;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}

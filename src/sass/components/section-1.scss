@@ -1,0 +1,91 @@
+.cards__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__overlay::before {
+  position: absolute;
+  width: 230px;
+  height: 278px;
+  content: '';
+  top: 5%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(120%);
+  transition: transform;
+  transition-duration: $animation-time;
+  transition-timing-function: $timin-fn;
+}
+
+.cards__item:hover .cards__overlay::before {
+  transform: translateY(0);
+}
+
+.cards__item {
+  position: relative;
+}
+.cards__item:hover .actions {
+  opacity: 1;
+}
+
+.cards {
+  padding-top: 93px;
+  padding-bottom: 92px;
+  font-family: $font-stack-title;
+}
+
+.cards__list {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  margin-bottom: 117px;
+  color: $color-title;
+  font-size: 48px;
+  line-height: 0.6;
+  text-align: center;
+  font-family: $font-stack-title;
+}
+.cards__item {
+  position: relative;
+  width: 255px;
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 4-30px);
+  flex-grow: 0;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+.cards__item:hover .cards__overlay::before {
+  transform: translateY(0);
+}
+.cards__item:hover .cards__overlay-buttons {
+  opacity: 1;
+}
+
+.cards__link {
+  display: flex;
+  align-items: flex-end;
+  width: 255px;
+  height: 320px;
+  text-decoration: none;
+}
+
+.cards__link:hover .media__text {
+  background-color: $color-accent;
+}
+.cards__link:hover .media__cost {
+  background-color: $color-second-accent;
+}
