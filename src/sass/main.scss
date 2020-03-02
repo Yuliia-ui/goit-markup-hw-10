@@ -3,6 +3,7 @@
  */
 
 @import './vars.scss';
+@import './components/list.scss';
 
 //UTILS
 @import './utils/visually-hidden.scss';
@@ -14,7 +15,6 @@
 //COMPONENTS
 @import './components/container.scss';
 @import './components/header.scss';
-@import './components/active-menu.scss';
 @import './components/page-nav.scss';
 @import './components/banner.scss';
 @import './components/about.scss';
